@@ -1,0 +1,26 @@
+<h1>Main#test</h1>
+<p>Find me in app/views/main/test.html.erb</p>
+
+<%= form_with url: "/main/test2", method: "post" , data: {turbo:false} do |form| %>
+    <%= form.label :query, "Subject:" %>
+    <%= form.text_field :Subject01 %>
+    <%= form.label :query, "Score:" %>
+    <%= form.text_field :Score01 %>
+    <%= form.submit "Search" %>
+    <br>
+    <%= form.label :query, "Subject:" %>
+    <%= form.text_field :Subject02 %>
+    <%= form.label :query, "Score:" %>
+    <%= form.text_field :Score02 %>
+    <%= form.submit "Search" %>
+    <br>
+    <%= form.label :query, "Subject:" %>
+    <%= form.text_field :Subject03 %>
+    <%= form.label :query, "Score:" %>
+    <%= form.text_field :Score03 %>
+    <%= form.submit "Search" %>
+    <br>
+  <% end %>
+
+
+  
